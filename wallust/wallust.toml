@@ -1,0 +1,11 @@
+backend = "full"
+color_space = "lch"
+palette = "dark"
+
+[templates]
+wofi = { template = 'template-wofi.css', target = "~/.config/wofi/style.css" }
+kitty = { template = 'template-kitty.conf', target = "~/.config/kitty/kitty.conf" }
+"nwg-bar" = { template = 'template-nwg-bar.css', target = "~/.config/nwg-bar/style.css" }
+waybar = { template = 'template-waybar.css', target = "~/.config/waybar/style.css" }
+hypr = { template = 'template-hypr.conf', target = "~/.config/hypr/colors-wallust.conf" }
+swaync = { template = 'template-swaync.css', target = "~/.config/swaync/style.css" }
