@@ -1,0 +1,8 @@
+mode=drun
+no_actions=true
+allow_images=true
+prompt=Search
+lines=8
+
+width=33.33%
+image_size=24
