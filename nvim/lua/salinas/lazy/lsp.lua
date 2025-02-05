@@ -106,13 +106,11 @@ return {
 						vim.api.nvim_create_autocmd("BufWritePre", {
 							buffer = bufnr,
 							callback = function()
-								vim.lsp.buf.code_action({
-									apply = true,
-									context = {
-										only = { "source.removeUnusedImports.ts" },
-										diagnostics = {},
-									},
-								})
+								local params = {
+									command = "_typescript.organizeImports",
+									arguments = { vim.api.nvim_buf_get_name(bufnr) },
+								}
+								vim.lsp.buf.execute_command(params)
 							end,
 						})
 					end,
