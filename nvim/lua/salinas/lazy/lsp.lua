@@ -130,6 +130,7 @@ return {
 				cssls = {},
 				html = {},
 				jsonls = {},
+				prismals = {},
 			}
 
 			local ensure_installed = vim.tbl_keys(servers or {})
