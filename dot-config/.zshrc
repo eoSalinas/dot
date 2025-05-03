@@ -57,9 +57,6 @@ eval "$(zoxide init --cmd cd zsh)"
 # Directories
 PATH="$PATH":"$HOME/.local/scripts/"
 
-# Sources
-source /usr/share/nvm/init-nvm.sh
-
 # Keybinds
 bindkey -e
 bindkey '^p' history-search-backward
@@ -75,15 +72,7 @@ export EDITOR=nvim
 
 # Aliases
 alias ls='ls --color'
-alias c='clear'
 alias in='nvim $(fzf -m --preview="bat --color=always {}")'
 alias pn='pnpm'
 alias pnx='pnpm dlx'
 
-# pnpm
-export PNPM_HOME="/home/salinas/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end

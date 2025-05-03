@@ -47,6 +47,4 @@ for package in "${CASKS[@]}"; do
     install_cask "$package"
 done
 
-# Handle with dotfiles
-
 echo -e "Setup complete!"
